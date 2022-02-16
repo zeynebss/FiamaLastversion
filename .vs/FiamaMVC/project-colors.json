@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "0ffdc8a1-6b07-46bd-9b16-4697260fe440": {
+      "ProjectGuid": "0ffdc8a1-6b07-46bd-9b16-4697260fe440",
+      "DisplayName": "Entities",
+      "ColorIndex": 0
+    },
+    "bbd0d415-105b-4214-8111-5be936775e20": {
+      "ProjectGuid": "bbd0d415-105b-4214-8111-5be936775e20",
+      "DisplayName": "Entities",
+      "ColorIndex": 1
+    },
+    "fdbcd0d4-d390-458c-98be-372c5039e1dd": {
+      "ProjectGuid": "fdbcd0d4-d390-458c-98be-372c5039e1dd",
+      "DisplayName": "DataAccess",
+      "ColorIndex": 2
+    },
+    "cc03d4ac-de13-4bcb-b500-2173018c0fc0": {
+      "ProjectGuid": "cc03d4ac-de13-4bcb-b500-2173018c0fc0",
+      "DisplayName": "Services",
+      "ColorIndex": 3
+    },
+    "df8bc9d3-e5cc-48a9-8579-8bb32bd3928c": {
+      "ProjectGuid": "df8bc9d3-e5cc-48a9-8579-8bb32bd3928c",
+      "DisplayName": "FiamaWeb",
+      "ColorIndex": 4
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 5
+}

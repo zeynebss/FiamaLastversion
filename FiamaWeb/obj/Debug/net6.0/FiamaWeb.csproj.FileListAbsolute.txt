@@ -274,3 +274,6 @@ C:\Users\Zeyneb\source\repos\FiamaMVC\FiamaWeb\bin\Debug\net6.0\zh-Hant\Microsof
 C:\Users\Zeyneb\source\repos\FiamaMVC\FiamaWeb\bin\Debug\net6.0\runtimes\win-arm\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\Zeyneb\source\repos\FiamaMVC\FiamaWeb\bin\Debug\net6.0\runtimes\win-arm64\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\Zeyneb\source\repos\FiamaMVC\FiamaWeb\obj\Debug\net6.0\scopedcss\Areas\AdminPanel\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Zeyneb\source\repos\FiamaMVC\FiamaWeb\bin\Debug\net6.0\Services.dll
+C:\Users\Zeyneb\source\repos\FiamaMVC\FiamaWeb\bin\Debug\net6.0\Services.pdb
+C:\Users\Zeyneb\source\repos\FiamaMVC\FiamaWeb\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll

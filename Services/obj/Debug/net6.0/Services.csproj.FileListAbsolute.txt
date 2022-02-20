@@ -10,3 +10,8 @@ C:\Users\Zeyneb\source\repos\FiamaMVC\Services\obj\Debug\net6.0\Services.csproj.
 C:\Users\Zeyneb\source\repos\FiamaMVC\Services\obj\Debug\net6.0\Services.dll
 C:\Users\Zeyneb\source\repos\FiamaMVC\Services\obj\Debug\net6.0\ref\Services.dll
 C:\Users\Zeyneb\source\repos\FiamaMVC\Services\obj\Debug\net6.0\Services.pdb
+C:\Users\Zeyneb\source\repos\FiamaMVC\Services\bin\Debug\net6.0\DataAccess.dll
+C:\Users\Zeyneb\source\repos\FiamaMVC\Services\bin\Debug\net6.0\Entities.dll
+C:\Users\Zeyneb\source\repos\FiamaMVC\Services\bin\Debug\net6.0\DataAccess.pdb
+C:\Users\Zeyneb\source\repos\FiamaMVC\Services\bin\Debug\net6.0\Entities.pdb
+C:\Users\Zeyneb\source\repos\FiamaMVC\Services\obj\Debug\net6.0\Services.csproj.CopyComplete

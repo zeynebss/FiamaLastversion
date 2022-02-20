@@ -3,16 +3,30 @@
 @{
     ViewData["Title"] = "Edit";
 }
+<style>
+    .label-photo{
+        background:gold;
+        padding:10px 20px;
+        color:#fff;
+        margin:10px 0;
+        cursor:pointer;
+    }
+    a{
+       text-decoration:none;
+       margin:15px 0;
+       
+    }
+</style>
 
-<h1>Edit</h1>
+<h1>Dəyişmək</h1>
 
-<h4>Product</h4>
+<h4>Məhsul</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Edit" enctype="multipart/form-data" >
+        <form asp-action="Edit" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-              <input type="hidden" asp-for="PublishDate" />
+            <input type="hidden" asp-for="PublishDate" />
             <input type="hidden" asp-for="ModifiedOn" />
             <input type="hidden" asp-for="PhotoUrl"/>
             <div class="form-group">
@@ -40,9 +54,9 @@
                 <input asp-for="Discount" class="form-control" />
                 <span asp-validation-for="Discount" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input class="d-none" name="NewPhoto" id="NewPhoto" type="file" />
-                <label class="label-photo control-label" for="NewPhoto">Select Photo</label>
+           <div class="form-group">
+                <input asp-for="PhotoUrl" type="file" />
+                <label class="label-photo control-label" asp-for="PhotoUrl">Select Photo</label>
             </div>
              <div class="form-group">
                 <label class="d-block font-weight-bold">Old Photo</label>
@@ -52,24 +66,30 @@
                     
                 }
             </div>
+           
             <div class="form-group">
-                <label asp-for="CategoryId" class="control-label">Category</label>
-            <select class="form-control" asp-for="CategoryId">
-                 <option value="0" disabled selected>selected category</option>
-                    @foreach(var item in ViewBag.CategoryList as List<Entities.Category>)
+                <label asp-for="CategoryId" class="control-label"></label>
+                <select asp-for="CategoryId" class="form-control" >
+                       <option value="0" disabled selected>...selected category...</option>
+                    @foreach (var item in ViewBag.categoryList as List<Entities.Category>)
                     {
-                        <option value="@item.ID">@item.CategoryName</option>
-                    }
+                         <option value="@item.ID">@item.CategoryName</option>
+                     }
                 </select>
+              
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input class="form-control" asp-for="IsSlider" value="true" />
+            </div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-warning" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a class="btn btn-danger" asp-action="Index">Back to List</a>
+    <a asp-action="Index">Back to List</a>
 </div>
 

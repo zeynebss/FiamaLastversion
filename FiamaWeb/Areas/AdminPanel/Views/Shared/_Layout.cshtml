@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="/admin-panel/vendors/simple-line-icons/css/simple-line-icons.css">
   <link rel="stylesheet" href="/admin-panel/vendors/flag-icon-css/css/flag-icon.min.css">
   <link rel="stylesheet" href="/admin-panel/vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <!-- endinject -->
   <!-- plugin css for this page -->
   <!-- End plugin css for this page -->
@@ -17,6 +18,7 @@
   <link rel="stylesheet" href="/admin-panel/css/style.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="/admin-panel/images/favicon.png" />
+  <link rel="stylesheet" href="//cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css"/>
 </head>
 
 <body>
@@ -419,15 +421,15 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/AdminPanel/AdminProducts">
+              <a class="nav-link" asp-controller="AdminProducts" asp-action="Index">
                 <i class="icon-cursor menu-icon"></i>
                 <span class="menu-title">Products</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../apps/calendar.html">
+              <a class="nav-link" asp-controller="Categories" asp-action="Index">
                 <i class="icon-calendar menu-icon"></i>
-                <span class="menu-title">Calendar</span>
+                <span class="menu-title">Categories</span>
               </a>
             </li>
             <li class="nav-item">
@@ -500,6 +502,8 @@
   <script src="/admin-panel/js/misc.js"></script>
   <script src="/admin-panel/js/settings.js"></script>
   <script src="/admin-panel/js/todolist.js"></script>
+ <script type="text/javascript" src="//cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+    @await RenderSectionAsync("Scripts", required:false)
   <!-- endinject -->
   <!-- Custom js for this page-->
   <!-- End custom js for this page-->

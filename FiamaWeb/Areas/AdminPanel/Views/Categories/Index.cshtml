@@ -34,7 +34,7 @@
                 @Html.DisplayFor(modelItem => item.CategoryName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.CategoryIcon)
+               <i class=" @Html.DisplayFor(modelItem => item.CategoryIcon)"></i>
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.IsDeleted)
@@ -43,11 +43,18 @@
                 @Html.DisplayFor(modelItem => item.ID)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+             <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-warning" style="color:white">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID" class="btn btn-primary" style="color:white">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger" style="color:white">Delete</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
+@section Scripts{
+    <script>
+        $(document).ready( function () {
+            $('#productTable').DataTable();
+        });
+    </script>
+}

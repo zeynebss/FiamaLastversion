@@ -6,14 +6,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Entities
 {
     public class User: IdentityUser
     {
         [Column(TypeName ="nvarchar(100)")]
-        public string FirstName { get; set; }
+        public string? FirstName { get; set; }
         [Column(TypeName = "nvarchar(100)")]
-        public string LastName { get; set; }
+        public string? LastName { get; set; }
         public string? Address { get; set; }
     }
 }

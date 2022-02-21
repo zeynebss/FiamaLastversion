@@ -16,7 +16,6 @@ namespace FiamaWeb.Areas.AdminPanel.Controllers
             _categoryManager = categoryManager;
         }
 
-
         // GET: AdminPanel/Categories
         public IActionResult Index()
         {
@@ -117,5 +116,6 @@ namespace FiamaWeb.Areas.AdminPanel.Controllers
             _categoryManager.Delete(selectedCategory);
             return RedirectToAction(nameof(Index));
         }
+
     }
 }

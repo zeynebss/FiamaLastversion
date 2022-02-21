@@ -22,7 +22,7 @@ namespace Services
         }
         public Category GetById(int? id)
         {
-            var selectedCategory = _context.Categories.Where(x => x.IsDeleted).FirstOrDefault(x => x.ID == id);
+            var selectedCategory = _context.Categories.FirstOrDefault(x => x.ID == id && !x.IsDeleted);
             return selectedCategory;
         }
         public void Add( Category category)
